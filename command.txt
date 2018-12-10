@@ -1,3 +1,72 @@
+Terminal commands
+
+-----------------------------------------------------------
+
+Initialize Git Repository
+
+1)git init "folder-name/path"
+2)create repository on github
+	OR
+1)create repository on github
+2)git clone "respository-url"
+------------------------------------------------------------
+
+Git Operations
+
+To add single file file
+git add "filename"
+
+To add all files in current directory
+git add .
+
+commit changes/files
+git commit -m"message"
+
+To psuh changes
+git push
+
+To set default remote to repository
+git remote add origin "repository-url"
+
+To check if remote is set
+git remote -v
+
+To push changes to default remote
+git push origin
+
+------------------------------------------------------------
+Install node.js and npm
+
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+-----------------------------------------------------------
+
+Initialize node directory
+
+npm init
+(this will create node directory, i.e will create package.json)
+
+-----------------------------------------------------------
+
+Intall and Initialize Jest
+
+1) Create node directory
+npm init
+
+2) Install Jest	
+npm install --save-dev jest
+
+then open package.json and set test="jest" in it
+
+To run unit testcases
+npm test
+
+To download missing node_modules (packages mentioned in package.json but not installed in node directory)
+npm install
+
+-----------------------------------------------------------
+
 Install MySQL
 
 sudo apt-get update
@@ -8,3 +77,17 @@ sudo apt-get install mysql-server
 To log sql commands in log file
 
 mysql> tee /home/synerzip/Desktop/Practice/SQL/log.txt;
+
+-----------------------------------------------------------
+
+To ignore "node_modules"files in git commit
+
+type foloowing command in terminal
+
+	gedit .gitignore&
+
+one file will open type following
+
+**/node_modules/**/*
+
+then check git status, node_modules folder should be excluded
