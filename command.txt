@@ -1,0 +1,10 @@
+Install MySQL
+
+sudo apt-get update
+sudo apt-get install mysql-server
+
+-----------------------------------------------------------
+
+To log sql commands in log file
+
+mysql> tee /home/synerzip/Desktop/Practice/SQL/log.txt;

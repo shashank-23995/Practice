@@ -1,0 +1,13 @@
+var p=require('path');
+var filename=p.basename("/home/synerzip/Desktop/Practice/NodeJS/filesystem.js");
+console.log(filename);
+var delimiter=p.delimiter;
+console.log(delimiter);
+var directories=p.dirname("/home/synerzip/Desktop/Practice/NodeJS/filesystem.js");
+console.log(directories);
+var extension=p.extname("/home/synerzip/Desktop/Practice/NodeJS/filesystem.js");
+console.log(extension);
+var seperator=p.sep;
+console.log(seperator);
+console.log(p.isAbsolute("filesystem.js"));
+console.log(p.resolve("filesystem.js"));

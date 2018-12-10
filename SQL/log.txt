@@ -1,0 +1,35 @@
+mysql> select * from student;
++-----+----------+
+| sno | sname    |
++-----+----------+
+|   1 | Shashank |
++-----+----------+
+1 row in set (0.00 sec)
+
+mysql> mysql select version();
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'mysql select version()' at line 1
+mysql> select version();
++-----------+
+| version() |
++-----------+
+| 8.0.13    |
++-----------+
+1 row in set (0.00 sec)
+
+mysql> SHOW VARIABLES LIKE "%version%";
++-------------------------+------------------------------+
+| Variable_name           | Value                        |
++-------------------------+------------------------------+
+| innodb_version          | 8.0.13                       |
+| protocol_version        | 10                           |
+| slave_type_conversions  |                              |
+| tls_version             | TLSv1,TLSv1.1,TLSv1.2        |
+| version                 | 8.0.13                       |
+| version_comment         | MySQL Community Server - GPL |
+| version_compile_machine | x86_64                       |
+| version_compile_os      | Linux                        |
+| version_compile_zlib    | 1.2.11                       |
++-------------------------+------------------------------+
+9 rows in set (0.00 sec)
+
+mysql> \q
