@@ -1,0 +1,52 @@
+
+Aggregation sum() using pipleline
+> db.orders.aggregate([{$match:{status:"A"}},{$group:{"_id":"$cust_id","total":{$sum:"$amount"}}}])
+{ "_id" : 2, "total" : 200 }
+{ "_id" : 1, "total" : 750 }
+
+
+Aggregation sum() using pipleline
+> db.orders.mapReduce(
+... function(){emit(this.cust_id,this.amount);},
+... function(key,values){return Array.sum(values)},
+... {
+... query:{status:"A"},
+... out:"order_totals"
+... }
+... }
+2018-12-21T12:10:06.668+0530 E QUERY    [js] SyntaxError: missing ) after argument list @(shell):8:0
+> db.orders.mapReduce(
+... function(){emit(this.cust_id,this.amount);},
+... function(key,values){return Array.sum(values)},
+... {
+... query:{status:"A"},
+... out:"order_totals"
+... }
+... )
+{
+	"result" : "order_totals",
+	"timeMillis" : 909,
+	"counts" : {
+		"input" : 3,
+		"emit" : 3,
+		"reduce" : 1,
+		"output" : 2
+	},
+	"ok" : 1
+}
+
+mapReduce after defining map and reduce function explicitly
+> var mapFunction=function(){ emit(this.cust_id,this.amount); };
+> var reduceFunction=function(ketCustId,valuesAmount){return Array.sum(valuesAmount);};
+> db.orders.mapReduce(mapFunction,reduceFunction,{out:"mapReduce_example"})
+{
+	"result" : "mapReduce_example",
+	"timeMillis" : 770,
+	"counts" : {
+		"input" : 4,
+		"emit" : 4,
+		"reduce" : 1,
+		"output" : 2
+	},
+	"ok" : 1
+}

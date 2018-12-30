@@ -91,3 +91,66 @@ one file will open type following
 **/node_modules/**/*
 
 then check git status, node_modules folder should be excluded
+
+----------------------------------------------------------------
+
+Install MongoDB
+
+1) Import the public key used by the package management system.
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
+
+2) Create a list file for MongoDB.
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
+
+3) Reload local package database.
+sudo apt-get update
+
+4) Install the MongoDB packages.
+sudo apt-get install -y mongodb-org
+
+----------------------------------------------------------------
+
+Use MongoDB
+
+1) Start MongoDB.
+sudo service mongod start
+
+2) Verify that MongoDB has started successfully
+[initandlisten] waiting for connections on port 27017
+
+3) Stop MongoDB.
+sudo service mongod stop
+
+4) Restart MongoDB.
+sudo service mongod restart
+
+5) Begin using MongoDB. (Start Mongo Shell)
+mongo
+
+----------------------------------------------------------------
+
+MongoDB with nodejs
+
+
+remove deprecation warning while connecting to mongoDB
+
+mongoclient.connect(url,{useNewUrlParser:true},function(err,db)
+
+-----------------------------------------------------------------
+
+Install Express
+
+1) Create directory
+mkdir myapp
+
+2)move to directory
+cd myapp
+
+3)Change entry point to app.js
+entry point: (index.js) to "app.js"
+
+4)Install Express
+npm install express --save
+OR
+to install temporarily without adding dependencies
+npm install express --no-save

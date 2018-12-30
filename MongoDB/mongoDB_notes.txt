@@ -1,0 +1,27 @@
+Delete Operation
+
+To Delete all documents from collection
+    db.inventory.deleteMany({})
+
+Bulk write operations
+Bulk write operations can be either ordered or unordered.
+
+SQL to mongoDB comparsion
+https://docs.mongodb.com/manual/reference/sql-comparison/
+
+Difference between pipeline and mapreduce
+https://stackoverflow.com/questions/25474106/pipeline-vs-mapreduce-in-mongodb
+
+Aggregation pipeline nad mapreduce comparison
+https://docs.mongodb.com/manual/reference/aggregation-commands-comparison/
+
+
+
+To display particular attributes from documents in the collection
+
+attribute:1  //to display
+
+attribute:0  //to hide
+
+example:
+_id: 0, name: 1, address: 1  //in customers collection

@@ -1,0 +1,18 @@
+Date - 21-12-2018
+
+Search UUID (wikipedia)
+
+https://github.com/sourabh-karmarkar/QuizImcc.git
+
+Date - 24-12-2018
+
+find solution
+
+Error while inserting multiple records in mongodb collection using nodejs
+node insertMultiple.js
+multiple documents inserted
+result - [object Object]
+number of documents inserted - 3
+inserted Ids - [object Object]
+
+solve error in queryRegularExpression.js (empty result)
