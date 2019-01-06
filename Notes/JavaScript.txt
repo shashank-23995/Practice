@@ -1,0 +1,30 @@
+
+Introduction - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction
+
+Grammar and types - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types
+
+Control flow and error handling - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling
+
+Loops and iteration - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration
+
+Functions - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
+
+Expression and operators - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators
+
+Numbers and dates - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Numbers_and_dates
+
+Text formatting - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Text_formatting
+
+Indexed collections - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections
+
+Keyed collections - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Keyed_collections
+
+Working with objects - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects
+
+Details of the object model - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Details_of_the_Object_Model
+
+Promises - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises
+
+Iterators and generators - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators
+
+JavaScript reference - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference

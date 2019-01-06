@@ -1,0 +1,22 @@
+
+Official website - https://reactjs.org/
+
+Documentation - https://reactjs.org/docs/getting-started.html
+
+Tutorial - https://reactjs.org/tutorial/tutorial.html
+
+Overview and Walkthrough - https://www.taniarascia.com/getting-started-with-react/
+
+Topics to be covered
+
+Advanced topics
+https://reactjs.org/docs/fragments.html
+https://reactjs.org/docs/higher-order-components.html
+https://reactjs.org/docs/integrating-with-other-libraries.html
+https://reactjs.org/docs/jsx-in-depth.html
+https://reactjs.org/docs/react-without-jsx.html
+https://reactjs.org/docs/reconciliation.html
+https://reactjs.org/docs/refs-and-the-dom.html
+https://reactjs.org/docs/render-props.html
+https://reactjs.org/docs/typechecking-with-proptypes.html
+https://reactjs.org/docs/uncontrolled-components.html

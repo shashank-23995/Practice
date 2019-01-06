@@ -1,0 +1,94 @@
+Tips
+
+1) To open the terminal, press Ctrl+Alt+T in Ubuntu, or press Alt+F2, type in gnome-terminal, and press enter.
+
+2) You can use the clear command to clear the terminal if it gets filled up with too many commands.
+
+3) TAB can be used to fill up in terminal. For example, You just need to type “cd Doc” and then TAB and the terminal fills the rest up and makes it “cd Documents”.
+
+4) Ctrl+C can be used to stop any command in terminal safely. If it doesn't stop with that, then Ctrl+Z can be used to force stop it.
+
+5) You can exit from the terminal by using the exit command.
+
+6) You can power off or reboot the computer by using the command sudo halt and sudo reboot.
+
+7) # man OR --help =  manual pages of the command
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Directory/File Commands
+
+# pwd = Get present working directory. To know in which directory you are in. It gives absolute path
+
+# ls = List all files in current directory. 
+# ls -a = list hidden files in current directory. 
+
+# cd = change directory. cd "path". This command is case sensitive
+# cd .. = go back to previous directory
+Note - If there is whitespace in directory name use backslash('\') before whitespace
+
+# mkdir = crete new folder/directory
+
+# rmdir = remove directory. (It can only be used to remove an empty directory)
+# rm = remove directory containing files
+# rm -r = delete just the directory
+
+# touch - create new file
+
+# cp = copy files through the command line. It takes two arguments: The first is the location of the file to be copied, the second is where to copy.
+
+#mv = move files through the command line. We can also use the mv command to rename a file.
+
+# locate = locate file in the linux system.
+# locate -i = to ignore case while searching file
+Note -  If you remember two words, you can separate them using an asterisk (*). For example, to locate a file containing the words "hello" and "this", you can use the command “locate -i *hello*this”.
+
+# echo = move some data, usually text into a file.
+Note - if you want to create a new text file or add to an already made text file, you just need to type in,
+ “echo hello, my name is alok >> new.txt”. 
+
+# cat = display contents of a file
+
+# kill = kill single process in the system. It requires process id
+# killall = kills all processes in the system. It does not require process id
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Other commands
+
+# sudo = sudo stands for "SuperUser Do". So, if you want any command to be done with administrative or root privileges, you can use the sudo command.
+
+# df = Use the df command to see the available disk space in each of the partitions in your system. You can just type in df in the command line and you can see each mounted partition and their used/available space in % and in KBs. If you want it shown in megabytes, you can use the command “df -m”.
+
+# du = Use du to know the disk usage of a file in your system. If you want to know the disk usage for a particular folder or file in Linux, you can type in the command df and the name of the folder or file. For example, if you want to know the disk space used by the documents folder in Linux, you can use the command “du Documents”. You can also use the command “ls -lah” to view the file sizes of all the files in a folder.
+
+# tar = Use tar to work with tarballs (or files compressed in a tarball archive) in the Linux command line. It has a long list of uses. It can be used to compress and uncompress different types of tar archives like .tar, .tar.gz, .tar.bz2,etc. It works on the basis of the arguments given to it. For example, "tar -cvf" for creating a .tar archive, -xvf to untar a tar archive, -tvf to list the contents of the archive, etc.
+Note - more info and examples at "https://www.tecmint.com/18-tar-command-examples-in-linux/"
+
+# zip, unzip = Use zip to compress files into a zip archive, and unzip to extract files from a zip archive.
+
+# uname = Use uname to show the information about the system your Linux distro is running. Using the command “uname -a” prints most of the information about the system. This prints the kernel release date, version, processor type, etc.
+
+# apt-get = Use apt to work with packages in the Linux command line. Use apt-get to install packages. This requires root privileges, so use the sudo command with it. For example, if you want to install the text editor jed (as I mentioned earlier), we can type in the command “sudo apt-get install jed”. Similarly, any packages can be installed like this. It is good to update your repository each time you try to install a new package. You can do that by typing “sudo apt-get update”. You can upgrade the system by typing “sudo apt-get upgrade”. We can also upgrade the distro by typing “sudo apt-get dist-upgrade”. The command “apt-cache search” is used to search for a package. If you want to search for one, you can type in “apt-cache search jed”(this doesn't require root).
+
+# chmod = Use chmod to make a file executable and to change the permissions granted to it in Linux.
+Note - Here is some more information about the chmod command "https://www.computerhope.com/unix/uchmod.htm"
+
+# hostname = Use hostname to know your name in your host or network. Basically, it displays your hostname and IP address. Just typing “hostname” gives the output. Typing in “hostname -I” gives you your IP address in your network.
+
+# ping =  Use ping to check your connection to a server.
+Note - Wikipedia says, "Ping is a computer network administration software utility used to test the reachability of a host on an Internet Protocol (IP) network". Simply, when you type in, for example, “ping google.com”, it checks if it can connect to the server and come back. It measures this round-trip time and gives you the details about it. The use of this command for simple users like us is to check your internet connection. If it pings the Google server (in this case), you can confirm that your internet connection is active!
+
+# curl = curl transfers a URL. Use this command to test an application's endpoint or connectivity to an upstream service endpoint. curl can be useful for determining if your application can reach another service, such as a database, or checking if your service is healthy.
+
+# env = env allows you to set or print the environment variables.
+
+# history = It shows the history of commands you have issued since the start of the session.
+
+# netstat = netstat shows the network status. This command shows network ports in use and their incoming connections.
+
+# lsof = lsof lists the open files associated with your application.
+
+More info -
+https://www.guru99.com/must-know-linux-commands.html

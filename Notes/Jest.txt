@@ -1,0 +1,8 @@
+
+Official website - https://jestjs.io/
+
+Documentation - https://jestjs.io/docs/en/getting-started
+
+API - https://jestjs.io/docs/en/api
+
+Online editor - https://repl.it/repls/InfiniteMundaneAudacity

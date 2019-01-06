@@ -1,0 +1,9 @@
+React Principles
+
+view=function(data)
+
+unidirectional flow of data
+
+model=data
+
+

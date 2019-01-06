@@ -1,5 +1,11 @@
-Terminal commands
+Install Java
 
+sudo apt install openjdk-8-jdk
+-----------------------------------------------------------
+
+Install Git
+
+sudo apt install git
 -----------------------------------------------------------
 
 Initialize Git Repository
@@ -80,6 +86,22 @@ mysql> tee /home/synerzip/Desktop/Practice/SQL/log.txt;
 
 -----------------------------------------------------------
 
+Import MySQl Database
+
+mysql -u [username] -p [database_name] < [file_path]
+
+example - 
+mysql -u root -p QuizDB < QuizDB.sql
+
+Export MySQL Database
+
+mysqldump -u [username] -p [Database_Name] > [file_name]
+
+example - 
+mysqldump -u root -p blog_db > blog_db.sql
+
+-----------------------------------------------------------
+
 To ignore "node_modules"files in git commit
 
 type foloowing command in terminal
@@ -138,6 +160,22 @@ mongoclient.connect(url,{useNewUrlParser:true},function(err,db)
 
 -----------------------------------------------------------------
 
+Import MongoDB Database
+
+mongoimport --db [Database_Name] --collection [collection_name] --file [file_name]
+
+example -
+mongoimport --db QuizExpressDB --collection Quiz --file Quiz.json
+
+Export MongoDB Database
+
+mongoexport  --db [Database_Name] --collection [collection_name] --out [file_name]
+
+example - 
+mongoexport  --db TTMMDB --collection group --out Group.json
+
+-----------------------------------------------------------------
+
 Install Express
 
 1) Create directory
@@ -154,3 +192,34 @@ npm install express --save
 OR
 to install temporarily without adding dependencies
 npm install express --no-save
+
+5)run Express application
+node app.js
+
+-------------------------------------------------------------------
+
+Using app generator in express
+
+1)install app generator
+npm install express-generator -g
+
+2)set default view engine for the project
+
+express --view=[view engine] myapp
+
+Ex
+express --view=pug myapp
+
+3)Install dependencies
+npm install
+
+-----------------------------------------------------------------
+
+Install ReactJS
+npm install create-react-app -g
+
+Create react-app
+npx create-react-app [project-name]
+
+cd [project-name]
+npm start

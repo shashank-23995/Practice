@@ -1,0 +1,6 @@
+
+Official website - https://redux.js.org/
+
+Documentation - https://redux.js.org/introduction/getting-started
+
+API - https://redux.js.org/api/api-reference

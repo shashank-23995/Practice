@@ -1,0 +1,40 @@
+MongoDB CRUD Operations - https://www.youtube.com/watch?v=CB9G5Dvv-EE
+
+Top 5 programming in 2019 with learning path - https://youtu.be/pvf0zSh3rDo
+
+UI color picker - https://uicolorpicker.com/
+
+ExpressJS Crash Course - https://www.youtube.com/watch?v=gnsO8-xJ8rs
+
+NodeJS and Express from scrach - https://www.youtube.com/watch?v=k_0ZzvHbNBQ&list=PLillGF-RfqbYRpji8t4SxUkMxfowG4Kqp
+
+ExpressJS Middleware tutorial - http://qnimate.com/express-js-middleware-tutorial/
+
+Building RESTful APIs using node and express - https://www.youtube.com/watch?v=pKd0Rpw7O48
+
+ExpressJS tutorial - https://www.youtube.com/watch?v=mW2NyglYpm8&list=PLYxzS__5yYQmHbpKMARP04F344zYRX91I&index=16
+
+How to build REST API using Node, Express and Mongo - https://www.youtube.com/watch?v=o3ka5fYysBM
+
+Mongoose - https://www.tutorialspoint.com/node_js_online_training/node_js_mongoose.asp
+
+
+ReactJS
+
+Higher order components - https://www.youtube.com/watch?v=LTunyI2Oyzw&list=PL8V1empgrpJb--IOBFEY_54SHF-Ft5SAa&index=1
+
+Crash Course - https://www.youtube.com/watch?v=Ke90Tje7VS0
+
+Full Course - https://www.youtube.com/watch?v=DLX62G4lc44
+
+Other -
+
+https://scrimba.com/
+https://scrimba.com/p/p7P5Hd/cQ726Sr
+
+https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc
+
+To install autoclean and autoremove (To solve file watcher problem in ReactJS)
+ - sudo apt-get autoremove
+
+ - sudo apt-get autoreclean

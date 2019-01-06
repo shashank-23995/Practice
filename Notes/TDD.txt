@@ -1,0 +1,23 @@
+Agenda
+Introduction to TDD kata
+	Why to do
+	How to do
+	What to do
+
+Showcase an example by doing actual TDD kata
+
+End of session, concluding
+You know how & Why & which TDD kata to do
+
+Description:
+Agenda
+Get your understanding correct for TDD kata
+Define your TDD kata which you will be doing every start of the day
+Practice it today for sufficient amount of time such that from tomorrow you can do it independently  in minimal required time
+
+EOD concluding -
+Defined TDD kata
+Readiness to practice it every start of the day with no ambiguity on 
+why to do it
+how to do it
+what to do

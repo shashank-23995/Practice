@@ -1,0 +1,52 @@
+
+Official Website - https://git-scm.com/
+
+Documentation - https://git-scm.com/docs
+
+Git cheat sheet by github - https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf
+
+Visual tool to understand git - http://ndpsoftware.com/git-cheatsheet.html
+
+Supportive videos - https://git-scm.com/videos
+
+
+Git commands to cover
+
+project ----
+clone
+
+Basic Snapshotting ---- 
+add
+status
+diff
+commit 
+reset 
+rm
+vm
+
+Branching and Merging ----
+branch
+checkout
+merge
+log
+stash
+
+Sharing and Updating Projects ---
+fetch
+pull
+push
+
+Inspection and Comparison ---
+log
+diff
+Patching ----
+apply
+cherry-pick
+rebase
+revert
+
+Third party tools
+Diffmerge
+	act as mergetool for git
+	act as difftool for git
+

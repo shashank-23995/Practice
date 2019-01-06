@@ -1,0 +1,27 @@
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP
+
+Topics to be covered
+
+HTTP 
+topics - Resources and URIs (15 mins for each item below)
+
+1. Identifying resources on the Web - 
+ https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web 
+
+2. Data URLs
+ https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs 
+
+3. MIME types
+ https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_Types https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Complete_list_of_MIME_types 
+
+4. Choosing between www and non-www URLs
+ https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Choosing_between_www_and_non-www_URLs 
+
+
+For every topic, pleases follow our learning model
+- learn on your own by reading it 
+- discuss it in your team (if required and if applicable) 
+- do hands on it (if required and if applicable)
+
+Note: "if required" and "if applicable" - decide on it by getting poll among your team.

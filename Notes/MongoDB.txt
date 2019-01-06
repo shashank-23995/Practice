@@ -1,0 +1,26 @@
+
+Official website - https://www.mongodb.com/
+
+Documentation - https://docs.mongodb.com/?_ga=2.68041049.999727946.1546767170-513168914.1545280913
+
+Manual - https://docs.mongodb.com/manual/
+
+Tutorial - https://docs.mongodb.com/manual/tutorial/
+
+MongoDB with NodeJS
+
+Third party resources for intro learning purpose:
+W3schools.com
+
+https://www.w3schools.com/nodejs/nodejs_mongodb.asp
+https://www.w3schools.com/nodejs/nodejs_mongodb_create_db.asp
+https://www.w3schools.com/nodejs/nodejs_mongodb_createcollection.asp
+https://www.w3schools.com/nodejs/nodejs_mongodb_insert.asp
+https://www.w3schools.com/nodejs/nodejs_mongodb_find.asp
+https://www.w3schools.com/nodejs/nodejs_mongodb_query.asp
+https://www.w3schools.com/nodejs/nodejs_mongodb_sort.asp
+https://www.w3schools.com/nodejs/nodejs_mongodb_delete.asp
+https://www.w3schools.com/nodejs/nodejs_mongodb_drop.asp
+https://www.w3schools.com/nodejs/nodejs_mongodb_update.asp
+https://www.w3schools.com/nodejs/nodejs_mongodb_limit.asp
+https://www.w3schools.com/nodejs/nodejs_mongodb_join.asp

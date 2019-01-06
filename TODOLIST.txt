@@ -16,3 +16,7 @@ number of documents inserted - 3
 inserted Ids - [object Object]
 
 solve error in queryRegularExpression.js (empty result)
+
+Date - 03-1-2019
+
+call function components from class

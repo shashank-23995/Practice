@@ -1,0 +1,5 @@
+
+https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/
+
+https://www.restapitutorial.com/lessons/whatisrest.html
+
