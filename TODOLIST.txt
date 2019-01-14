@@ -20,3 +20,19 @@ solve error in queryRegularExpression.js (empty result)
 Date - 03-1-2019
 
 call function components from class
+
+Date - 08-1-2019
+ES6 Syntax
+
+Date - 09-1-2019
+
+.then() javascript
+pass JSON data in response
+what is provider
+how to combine reducers using {combineReducers}
+arrow functions
+spread operator redux
+{connect} react-redux
+propTypes
+boilerplate
+subscribe 

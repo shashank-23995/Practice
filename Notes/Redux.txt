@@ -1,0 +1,122 @@
+
+Official Website - https://redux.js.org/
+
+Tpoics to be covered - 
+
+7-JAN-2019
+
+Introduction
+	Getting Started with Redux
+	Installation
+	Motivation
+	Core Concepts
+	Three Principles
+	Prior Art	//skip
+	Learning Resources
+	Ecosystem	//skip
+	Examples
+
+Basic Tutorial
+	Basic Tutorial: Intro
+	Actions
+	Reducers
+	Store
+	Data flow
+	Usage with React
+	Example: Todo List
+
+
+Redux - Redux is a predictable state container for JavaScript apps.(It maintains state of the application)
+
+store - It stores state of an application
+
+Action - Action is plain javascript objects consist of "type" and "payload"
+	where, type is type of operation to be performed
+		payload is any data required to perform operation
+ - Enforcing that every change is described as an action lets us have a clear understanding of what’s going on in the app. If something changed, we know why it changed. Actions are like breadcrumbs of what has happened.
+ - Actions are payloads of information that send data from your application to your store. They are the only source of information for the store. You send them to the store using store.dispatch().
+ - Action creators are exactly that—functions that create actions.
+ - n Redux, action creators simply return an action
+
+example - 
+
+function addTodo(text) {
+  return {
+    type: ADD_TODO,
+    text
+  }
+}
+
+Examples - 
+
+{
+	action: 'INCREMENT',
+	data: counter
+}	
+
+{ type: 'ADD_TODO', text: 'Go to swimming pool' }
+
+{ type: 'TOGGLE_TODO', index: 1 }
+
+{ type: 'SET_VISIBILITY_FILTER', filter: 'SHOW_ALL' }
+
+Reducer - 
+ - We write reducer to tie states and actions together.
+ - it’s just a function that takes state and action as arguments, and returns the next state of the app.
+ - Reducers are just pure functions that take the previous state and an action, and return the next state.
+ - Remember to return new state objects, instead of mutating the previous state.
+ - Reducers specify how the application's state changes in response to actions sent to the store.
+ - Remember that actions only describe what happened, but don't describe how the application's state changes.
+ - Things you should never do inside a reducer:
+	 - Mutate its arguments;
+	 - Perform side effects like API calls and routing transitions;
+	 - Call non-pure functions, e.g. Date.now() or Math.random().
+Examples - 
+
+1)
+
+function visibilityFilter(state = 'SHOW_ALL', action) {
+  if (action.type === 'SET_VISIBILITY_FILTER') {
+    return action.filter
+  } else {
+    return state
+  }
+}
+
+2)
+
+function todos(state = [], action) {
+  switch (action.type) {
+    case 'ADD_TODO':
+      return state.concat([{ text: action.text, completed: false }])
+    case 'TOGGLE_TODO':
+      return state.map(
+        (todo, index) =>
+          action.index === index
+            ? { text: todo.text, completed: !todo.completed }
+            : todo
+      )
+    default:
+      return state
+  }
+}
+
+Redux Three Principles - 
+
+1) Single source of truth - 
+ - The state of your whole application is stored in an object tree within a single store.
+ - A single state tree also makes it easier to debug or inspect an application
+ - This makes it easy to create universal apps, as the state from your server can be serialized and hydrated into the client with no extra coding effort.
+
+2) State is read-only - 
+ - The only way to change the state is to emit an action, an object describing what happened.
+ - This ensures that neither the views nor the network callbacks will ever write directly to the state.
+ - All changes are centralized and happen one by one in a strict order, there are no subtle race conditions to watch out for.
+
+3) Changes are made with pure functions - 
+ - To specify how the state tree is transformed by actions, you write pure reducers.
+
+Middleware - 
+ -  The middleware sits in between the dispatch and reducers, which means we can alter our dispatched actions before they get to the reducers or execute some code during the dispatch.
+ - To apply a middleware in redux, we would need to require the applyMiddleware function from the redux library.
+ - An example of a redux middleware is redux-thunk which allows you to write action creators that return a function instead of an action.
