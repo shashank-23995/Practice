@@ -1,0 +1,15 @@
+2. What is the output of following code fragment? Explain why
+
+x = 2
+
+if x > 3
+    print("This number")
+print("is greater")
+print("than 3")
+
+-->
+output - 
+is greater
+than 3
+
+as value of x is not greater than 3 if() block will not execute

@@ -1,0 +1,50 @@
+1. Which of the following integers are valid python integers ? 110, 1.0, 17.5, -39, -2.3
+
+--> 110, -39 are valid integers
+
+2. What are the results of the following operations and explain why
+ 
+a. 15 + 20 * 3
+--> result - 75
+	* has higher precedence than +
+	15 + (20 * 3)
+	15 + 60
+	75
+
+b. 13 // 2 + 3
+--> result - 9
+	// has higher precedence than +
+	(13 // 2) + 3
+	6 + 3
+	9
+
+c. 31 + 10 // 3
+--> result - 34
+	// has higher precedence than +
+	31 + (10 // 3)
+	31 + 3
+	34
+
+d. 20 % 7 // 3
+--> result - 2
+	% and // has equal precedence hence operation will execute from left to right
+	(20 % 7) // 3
+	6 // 3
+	2
+
+e. 2 ** 3 ** 2
+--> result -  512
+	** operator is right associative
+	(2**(3**2))
+	(2 ** 9)
+	512
+
+3. What happens when you evaluate 1 // 0 in the python console? Why does this happen?
+
+--> console displays following message
+
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ZeroDivisionError: integer division or modulo by zero
+
+because division by zero is errorenous operation

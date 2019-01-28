@@ -1,0 +1,60 @@
+1. Which of the following are python floating point numbers? 1, 1.0, 1.12e4, -3.141759, 735, 0.57721566, 7.5e-3
+
+--> 1.0, 1.12e4, -3.141759,0.57721566, 7.5e-3
+
+2. What is the difference between integer and floating point division? What is the operator used for floating point division?
+
+--> 
+
+Difference
+Integer division always return integer value even if number is not divisible
+Floating point can return float value depending upon operations
+
+/ is used for floating point division
+
+3. What are the results of the following operations? Explain why
+
+a. 1.5 + 2
+-->result - 3.5
+	one operand in above operation is float hence result is in float
+
+b. 1.5 // 2.0
+--> result - 0.0
+	1.5 is not divisible by 2.0 and and we are using integer division
+
+c. 1.5 / 2.0
+--> result - 0.75
+	1.5 is not divisible by 2.0 and but we are using floating point division
+
+d. 1.5 ** 2
+--> result - 2.25
+	We are using '**' exponent operator 
+
+e. 1 / 2
+-->result - 0.5
+	We are using floating point division operator
+
+f. -3 // 2
+--> result -  -2
+	one operand is negative and we are using integer division operator
+
+4. What happens when you evaluate 1 / 0 in the python console?
+--> console displays following message
+
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ZeroDivisionError: division by zero
+
+because division by zero is errorenous operation
+
+5. What happens when you evaluate 1e1000? What about -1e1000? and type(1e1000)?
+-->
+1e1000
+--> inf
+
+-1e1000
+--> -inf
+
+type(1e1000)
+--> <class 'float'>
+

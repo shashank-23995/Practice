@@ -1,0 +1,5 @@
+1. For what values of x will this program print "True"
+if not x > 5:
+    print("True")
+
+--> for any values less than or equal to 5. i.e. 0, 1, 2, 3, 4, 5

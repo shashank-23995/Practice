@@ -1,0 +1,8 @@
+n1 = int(input())
+arr1 = list(map(int, input().split()))
+n2 = int(input())
+arr2 = list(map(int, input().split()))
+a = set(arr1)
+b = set(arr2)
+result = a.difference(b)
+print(len(result))

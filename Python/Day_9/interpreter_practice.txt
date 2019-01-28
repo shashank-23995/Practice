@@ -1,0 +1,585 @@
+synerzip@ULTP-348:~/Desktop/Practice/Python$ python3
+Python 3.5.2 (default, Nov 12 2018, 13:43:14)
+[GCC 5.4.0 20160609] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> animals = ('cat','dog','fish')
+>>> dir(animals)
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__','__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'count', 'index']
+>>> type(animals)
+<class 'tuple'>
+>>> dir(animals)
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__','__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'count', 'index']
+>>> my_tuple = ()
+>>> my_tuple
+()
+>>> another_tuple = tuple()
+>>> another_tuple
+()
+>>> print(animals[0])
+cat
+>>> print(animals[1])
+dog
+>>> print(animals[6])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: tuple index out of range
+>>> print(animals[-2])
+dog
+>>> print(animals[-1])
+fish
+>>> print(animals[-2])
+dog
+>>> print(animals[-3])
+cat
+>>> print(animals[-4])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: tuple index out of range
+>>> print(animals[0])
+cat
+>>> animals[1:3]
+('dog', 'fish')
+>>> animals[1:-1]
+('dog',)
+>>> print(animals[2:])
+('fish',)
+>>> print(animals[:])
+('cat', 'dog', 'fish')
+>>> print(animals[::2])
+('cat', 'fish')
+>>> print(animals[1::2])
+('dog',)
+>>> print(animals[::2])
+('cat', 'fish')
+>>> del animals[2]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object doesn't support item deletion
+>>> numbers(34, 67, 12, 28)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'numbers' is not defined
+>>> numbers = (34, 67, 12, 29)
+>>> my_number = 67
+>>> if my_number not in numbers:
+...     print("%d is not in the list"%my_number)
+...
+>>> len(animals)
+3
+>>> sum(numbers)
+142
+>>> any(numbers)
+True
+>>> any((1, 0, 1, 0, 1))
+True
+>>> sll((1, 0, 1, 0, 1))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'sll' is not defined
+>>> all((1, 0, 1, 0, 1))
+False
+>>> numbers
+(34, 67, 12, 29)
+>>> number.count(5)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'number' is not defined
+>>> numbers.count(5)
+0
+>>> numbers.count(5\34)
+  File "<stdin>", line 1
+    numbers.count(5\34)
+                      ^
+SyntaxError: unexpected character after line continuation character
+>>> numbers.count(34)
+1
+>>> numbers.index(34)
+0
+>>> numbers.index(29)
+3
+>>> numbers.index(2334)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: tuple.index(x): x not in tuple
+>>> sorted(numbers)
+[12, 29, 34, 67]
+>>> reverseed(numbers)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'reverseed' is not defined
+>>> reversed(numbers)
+<reversed object at 0x7f253eb2a160>
+>>> tuple(sorted(numbers))
+(12, 29, 34, 67)
+>>> tuple(reversed(numbers))
+(29, 12, 67, 34)
+>>> numbers
+(34, 67, 12, 29)
+>>> print((1, 2, 3) + (4, 5, 6))
+(1, 2, 3, 4, 5, 6)
+>>> (1, 2, 3) * 3
+(1, 2, 3, 1, 2, 3, 1, 2, 3)
+>>> (1, 2, 3) - (2, 3)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for -: 'tuple' and 'tuple'
+>>> dir(numbers)
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__','__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'count', 'index']
+>>> dir(animals)
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__','__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'count', 'index']
+>>> print((1, 2, 3) + (4, 5, 6))
+(1, 2, 3, 4, 5, 6)
+>>> (1, 2, 3) * 3
+(1, 2, 3, 1, 2, 3, 1, 2, 3)
+>>> (1, 2, 3) - (2, 3)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for -: 'tuple' and 'tuple'
+>>> my_tuple = ('abc')
+>>> type(my_tuple)
+<class 'str'>
+>>> my_tuple = ('abc',)
+>>> type(my_tuple)
+<class 'tuple'>
+>>> my_tuple = ()
+>>> type(my_tuple)
+<class 'tuple'>
+>>> my_tuple = ('abc',)
+>>> type(my_tuple)
+<class 'tuple'>
+>>> animals = {'cat', 'dog', 'goldfish', 'canary', 'cat'}
+>>> print(animals)
+{'cat', 'goldfish', 'canary', 'dog'}
+>>> print(animals)
+{'cat', 'goldfish', 'canary', 'dog'}
+>>> print(animals)
+{'cat', 'goldfish', 'canary', 'dog'}
+>>> print(animals)
+{'cat', 'goldfish', 'canary', 'dog'}
+>>> print(animals)
+{'cat', 'goldfish', 'canary', 'dog'}
+>>> even_numbers = {2, 4, 6, 8, 10}
+>>> big_numbers = {6, 7, 8, 9, 10}
+>>> even_numbers
+{8, 10, 2, 4, 6}
+>>> big_numbers
+{8, 9, 10, 6, 7}
+>>> print(big_numbers - even_numbers)
+{9, 7}
+>>> print(big_numbers | even_numbers)
+{2, 4, 6, 7, 8, 9, 10}
+>>> print(big_numbers & even_numbers)
+{8, 10, 6}
+>>> print(big_numbers ^ even_numbers)
+{2, 4, 7, 9}
+>>> dir(even_numbers)
+['__and__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__iand__', '__init__', '__ior__', '__isub__', '__iter__', '__ixor__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__or__', '__rand__', '__reduce__', '__reduce_ex__', '__repr__', '__ror__', '__rsub__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__xor__', 'add', 'clear', 'copy', 'difference', 'difference_update', 'discard', 'intersection', 'intersection_update', 'isdisjoint', 'issubset', 'issuperset', 'pop', 'remove', 'symmetric_difference', 'symmetric_difference_update', 'union', 'update']
+>>> big_numbers.difference(even_numbers)
+{9, 7}
+>>> big_numbers.union(even_numbers)
+{2, 4, 6, 7, 8, 9, 10}
+>>> big_numbers.intersection(even_numbers)
+{8, 10, 6}
+>>> big_numbers.symmetric_difference(even_numbers)
+{2, 4, 7, 9}
+>>> big_numbers.add(11)
+>>> big_numbers
+{6, 7, 8, 9, 10, 11}
+>>> discard(11)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'discard' is not defined
+>>> big_numbers.discard(11)
+>>> big_numbers
+{6, 7, 8, 9, 10}
+>>> type(big_numbers)
+<class 'set'>
+>>> my_set = {1,2,3,4,5,6}
+>>> another_set = {4,5,6}
+>>> my_set.issuperset(another_set)
+True
+>>> my_set.issubset(another_set)
+False
+>>> another_set.issubset(my_set)
+True
+>>> another_set.add(7)
+>>> another_set
+{4, 5, 6, 7}
+>>> my_set.add(another_set)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unhashable type: 'set'
+>>> my_set.update(another_set)
+>>> print(my_set)
+{1, 2, 3, 4, 5, 6, 7}
+>>> big_numbers_copy.copy(big_numbers)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'big_numbers_copy' is not defined
+>>> big_numbers_copy = big_numbers.copy()
+>>> big_numbuers.difference(even_numbers)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'big_numbuers' is not defined
+>>> big_numbers.difference(even_numbers)
+{9, 7}
+>>> animals = {'zebra', 'cat', 'lion', 'fish', 'dog'}
+>>> print(animals)
+{'fish', 'lion', 'zebra', 'cat', 'dog'}
+>>> print(animals)
+{'fish', 'lion', 'zebra', 'cat', 'dog'}
+>>> sorted(animals)
+['cat', 'dog', 'fish', 'lion', 'zebra']
+>>> tuple(sorted(animals))
+('cat', 'dog', 'fish', 'lion', 'zebra')
+>>> sorted(animals)
+['cat', 'dog', 'fish', 'lion', 'zebra']
+>>> big_numbers_copy.remove()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: remove() takes exactly one argument (0 given)
+>>> big_numbers_copy.remove(0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 0
+>>> big_numbers_copy
+{8, 9, 10, 6, 7}
+>>> big_numbers_copy.remove(7)
+>>> big_numbers_copy.discard(6)
+>>> sorted_amimals = sorted(animals)
+>>> print(sorted_animals)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'sorted_animals' is not defined
+>>> sorted_animals = sorted(animals)
+>>> print(sorted_animals)
+['cat', 'dog', 'fish', 'lion', 'zebra']
+>>> set(sorted_animals)
+{'cat', 'lion', 'fish', 'zebra', 'dog'}
+>>> animals[0]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'set' object does not support indexing
+>>> a = {}
+>>> type(a)
+<class 'dict'>
+>>> b = set()
+>>> type(b)
+<class 'set'>
+>>> range
+<class 'range'>
+>>> range(10)
+range(0, 10)
+>>> my_numbers = range(10)
+>>> my_numbers
+range(0, 10)
+>>> list(my_numbers)
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> list(range(1,11))
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> list(range(1,11,2))
+[1, 3, 5, 7, 9]
+>>> marbles = {"red":34, "green":30, "brown":31, "yellow":29}
+>>> marbles
+{'yellow': 29, 'green': 30, 'brown': 31, 'red': 34}
+>>> personal_details = {"name":"John Doe", "age":38}
+>>> person_details[name]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'person_details' is not defined
+>>> marbles[blue]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'blue' is not defined
+>>> person_details["name"]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'person_details' is not defined
+>>> personal_details["name"]
+'John Doe'
+>>> marbles["red"] += 3
+>>> marbles
+{'yellow': 29, 'green': 30, 'brown': 31, 'red': 37}
+>>> marbles
+{'yellow': 29, 'green': 30, 'brown': 31, 'red': 37}
+>>> personal_details["name"] = "Jane Q. Doe"
+>>> personal_details
+{'name': 'Jane Q. Doe', 'age': 38}
+>>> marbles
+{'yellow': 29, 'green': 30, 'brown': 31, 'red': 37}
+>>> marbles["blue"] = 50
+>>> marbles
+{'yellow': 29, 'blue': 50, 'green': 30, 'brown': 31, 'red': 37}
+>>> marble["green"] = 35
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'marble' is not defined
+>>> marbles["green"] = 35
+>>> marbles
+{'yellow': 29, 'blue': 50, 'green': 35, 'brown': 31, 'red': 37}
+>>> battleship_guesses = {
+... (3,4):False,
+... (2,6):True,
+... (2,5):True,
+... }
+>>> battleship_guesses[(3,4)]
+False
+>>> battleship_guesses[3,4]
+False
+>>> battleship_guesses[2,6]
+True
+>>> type(marbles)
+<class 'dict'>
+>>> dir(marblrws)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'marblrws' is not defined
+>>> dir(marbles)
+['__class__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__','__getattribute__', '__getitem__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values']
+>>> marbles["orange"]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'orange'
+>>> marbles.get("orange")
+>>> result = marbles.get("orange")
+>>> print(result)
+None
+>>> type(result)
+<class 'NoneType'>
+>>> marbles.get("orange",0)
+0
+>>> marbles.get("red",0)
+37
+>>> another_marbles = {"orange":34,"blue":23,"purple":36}
+>>> marbles.update(another_marbles)
+>>> marbles
+{'purple': 36, 'blue': 23, 'brown': 31, 'orange': 34, 'yellow': 29, 'red': 37, 'green': 35}
+>>> marbles.keys()
+dict_keys(['purple', 'blue', 'brown', 'orange', 'yellow', 'red', 'green'])
+>>> marbles.values()
+dict_values([36, 23, 31, 34, 29, 37, 35])
+>>> marbles.items()
+dict_items([('purple', 36), ('blue', 23), ('brown', 31), ('orange', 34), ('yellow', 29), ('red', 37), ('green', 35)])
+>>> purple in marbles
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'purple' is not defined
+>>> "purple" in marbles
+True
+>>> "white" in marbles
+False
+>>> 50 in marbles.values()
+False
+>>> 50 in marbles.values
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: argument of type 'builtin_function_or_method' is not iterable
+>>> 50 in marbles.values(0
+...
+... 0
+  File "<stdin>", line 3
+    0
+    ^
+SyntaxError: invalid syntax
+>>> 50 in marbles.values()
+False
+>>> dir(marbles)
+['__class__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__','__getattribute__', '__getitem__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values']
+>>>
+>>> animals = ['cat', 'dog', 'goldfish', 'canary', 'cat']
+>>> animals
+['cat', 'dog', 'goldfish', 'canary', 'cat']
+>>> type(animals)
+<class 'list'>
+>>> animals_set = set(animals)
+>>> type(animals_set)
+<class 'set'>
+>>> animals_set
+{'cat', 'goldfish', 'canary', 'dog'}
+>>> animals_unique_list = list(animals_set)
+>>> animals_unique_list
+['cat', 'goldfish', 'canary', 'dog']
+>>> animals_unique_tuple = tuple(animals_unique_list)
+>>> animals_unique_tuple
+('cat', 'goldfish', 'canary', 'dog')
+>>> animals_set
+{'cat', 'goldfish', 'canary', 'dog'}
+>>> marbles
+{'purple': 36, 'blue': 23, 'brown': 31, 'orange': 34, 'yellow': 29, 'red': 37, 'green': 35}
+>>> colours = list(marbles)
+>>> colours
+['purple', 'blue', 'brown', 'orange', 'yellow', 'red', 'green']
+>>> counts = tuple(marbles.values())
+>>> counts
+(36, 23, 31, 34, 29, 37, 35)
+>>> marbles_set = set(marbles)
+>>> marbles_set
+{'purple', 'yellow', 'green', 'blue', 'brown', 'orange', 'red'}
+>>> marbles.items()
+dict_items([('purple', 36), ('blue', 23), ('brown', 31), ('orange', 34), ('yellow', 29), ('red', 37), ('green', 35)])
+>>> marbles_set = set(marbles.items())
+>>> marbles_set
+{('yellow', 29), ('orange', 34), ('blue', 23), ('brown', 31), ('red', 37), ('green', 35), ('purple', 36)}
+>>> dict([1,2,3,4])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: cannot convert dictionary update sequence element #0 to a sequence
+>>> dict([(1,2),(3,4)])
+{1: 2, 3: 4}
+>>> dict((1,2),(3,4))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: dict expected at most 1 arguments, got 2
+>>> dict([(1,2),(3,4)])
+{1: 2, 3: 4}
+>>> s = "shashank"
+>>> len(s)
+8
+>>> s.index(a)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: Can't convert 'dict' object to str implicitly
+>>> s.index("a")
+2
+>>> s
+'shashank'
+>>> type(s)
+<class 'str'>
+>>> s.index("n")
+6
+>>> s[0]
+'s'
+>>> s[3:5]
+'sh'
+>>> s[0] = "b"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>> 'a' in 'abcd'
+True
+>>> 'ab' in 'abcd'
+True
+>>> ['a','b'] in ['a','b','c','d']
+False
+>>> abc_list = list("abracadabra")
+>>> abc_list
+['a', 'b', 'r', 'a', 'c', 'a', 'd', 'a', 'b', 'r', 'a']
+>>> str(abc_list)
+"['a', 'b', 'r', 'a', 'c', 'a', 'd', 'a', 'b', 'r', 'a']"
+>>> dir(str)
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__','__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isdecimal', 'isdigit','isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split','splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+>>> s = "".joii(abc_list)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'str' object has no attribute 'joii'
+>>> s = "".join(abc_list)
+>>> animals
+['cat', 'dog', 'goldfish', 'canary', 'cat']
+>>> animals = ('cat','dog','fish')
+>>> "".join(animals)
+'catdogfish'
+>>> ",".join(animals)
+'cat,dog,fish'
+>>> ", ".join(animals)
+'cat, dog, fish'
+>>> animals_str = ", ".join(animals)
+>>> animals_
+animals_set           animals_str           animals_unique_list   animals_unique_tuple
+>>> animals
+('cat', 'dog', 'fish')
+>>> animals_str = list(", ".join(animals))
+>>> animals_str
+['c', 'a', 't', ',', ' ', 'd', 'o', 'g', ',', ' ', 'f', 'i', 's', 'h']
+>>> animals_str.split()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'split'
+>>> animals_str = ", ".join(animals)
+>>> animals.split()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'tuple' object has no attribute 'split'
+>>> animals_str.split()
+['cat,', 'dog,', 'fish']
+>>> animals_str.split(',')
+['cat', ' dog', ' fish']
+>>> animals_str.split('|')
+['cat, dog, fish']
+>>> animals_str.split(',')
+['cat', ' dog', ' fish']
+>>> animals_str.split(", ")
+['cat', 'dog', 'fish']
+>>> animals_str = str(animals_str)
+>>> animals_str.split(", ")
+['cat', 'dog', 'fish']
+>>> animals_str
+'cat, dog, fish'
+>>> animals_str.split(", ",1)
+['cat', 'dog, fish']
+>>> animals_str.split(",",1)
+['cat', ' dog, fish']
+>>> animals_str.split(",")
+['cat', ' dog', ' fish']
+>>> animals_str.split(", ")
+['cat', 'dog', 'fish']
+>>> animals_str.split(", ",1)
+['cat', 'dog, fish']
+>>> man split
+  File "<stdin>", line 1
+    man split
+            ^
+SyntaxError: invalid syntax
+>>> animals_str.split(",",1)
+['cat', ' dog, fish']
+>>> animals_str.split(",",2)
+['cat', ' dog', ' fish']
+>>> animals_str.split(",",0)
+['cat, dog, fish']
+>>> animals_str.split(",",1)
+['cat', ' dog, fish']
+>>> my_table = [
+... [1, 2, 3],
+... [4, 5, 6],
+... [7, 8, 9],
+... [10, 11, 12],
+... ]
+>>> my_
+my_number   my_numbers  my_set      my_table    my_tuple
+>>> my_t
+my_table  my_tuple
+>>> my_table[0]
+[1, 2, 3]
+>>> my_table[0,1]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: list indices must be integers or slices, not tuple
+>>> my_table[0]
+[1, 2, 3]
+>>> my_table[0][1]
+2
+>>> my_table[0][0]
+1
+>>> my_table[1][1]
+5
+>>> my_table[0][0] = 42
+>>> my_table[0] = 42
+>>> my_table
+[42, [4, 5, 6], [7, 8, 9], [10, 11, 12]]
+>>> my_table[0][0] = 1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'int' object does not support item assignment
+>>> my_matrix = []
+>>> my_matrix = [
+... [1,2,3],
+... [4,5,6],
+... [7,8,9],
+... ]
+>>> my_table = [
+... [1,2,3],
+... [4,5,6],
+... [7,8,9],
+... [10,11,12],
+... ]
+>>> my_table
+[[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]]

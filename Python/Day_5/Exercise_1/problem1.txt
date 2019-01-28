@@ -1,0 +1,26 @@
+ 1. Which of these fragments are valid and invalid first lines of if statements?
+ Explain why ?
+
+a. if(x > 4)
+--> valid. if value of x is greater than 4 block will be executed
+
+b. if x == 2
+--> valid. if value of x is equal to 2 block will be executed
+
+c. if(y =< 4)
+--> valid. if value of y is less than or equal 4 block will be executed
+
+d. if(x = 4)
+--> invalid. = is not comparison operator
+
+e. if(3 <= a)
+--> valid. if a is greater than or equal to 3 block will be executed
+
+f. if(1 - 1)
+--> valid. 
+
+g. if((1 - 1) <= 0) 
+--> valid. 
+
+h. if(name == "James")
+--> valid. 

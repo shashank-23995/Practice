@@ -36,3 +36,7 @@ spread operator redux
 propTypes
 boilerplate
 subscribe 
+
+Date - 25-1-2019
+
+Get details about jupyter  

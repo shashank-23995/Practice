@@ -1,0 +1,97 @@
+import cv2
+import numpy as np
+import math
+import io
+from IPython.display import Image, display
+
+
+def openImage():
+    return cv2.imread("../images/nestle.jpeg")
+
+def displayImage(img, fmt='.jpeg'):
+    display(Image(cv2.imencode(fmt, img)[1].tostring()))
+
+displayImage(openImage())
+
+image = openImage()
+
+def scale_row(image, scale=2):
+    return np.moveaxis(np.asarray([
+        np.vstack([
+                np.linspace(image[i,:,channel], image[i+1,:,channel], 2 + scale - 1)[:-1,:]
+                for i in range(image[...,channel].shape[0] - 1)])
+        for channel in range(image.shape[2])
+    ]), 0, -1)
+
+def scale_image_k_points(image, scale=2):
+    return np.clip(scale_row(scale_row(image).swapaxes(0,1)).swapaxes(0,1), 0, 255).astype(np.uint8)
+
+displayImage(scale_image_k_points(openImage()))
+
+
+scale image
+
+# img = openImage()[:,:,0]
+# displayImage(img)
+image = openImage()
+print(image.shape)
+# print(image[...,:1].shape)
+displayImage(image)
+---------------------------
+array linspace
+
+a=[1,2,3]
+b=[4,5,6]
+c=[7,8,9]
+l=np.linspace(a,b,6)
+print(l)
+
+
+--------------------------------
+
+l=openImage()
+print("shape output",l.shape)
+v1=l[100,:,0]
+print(v1.shape)
+v2=l[170,:,0]
+print(v2.shape)
+displayImage(np.linspace(v1,v2,100))
+
+--------------------------------
+
+def scale_image(arr, scale):
+    sarr = None
+    for i in range(arr.shape[0]-1):
+        int_arr = np.linspace(arr[i,:], arr[i+1,:], scale+2)[:-1,:]
+        if sarr is None:
+            sarr = int_arr
+        else:
+            sarr = np.vstack((sarr, int_arr))
+    return sarr
+v1 = scale_image(l[:,:,2],scale=2)
+v2 = np.rot90(v1)
+v3 = np.rot90(v2)
+v4 = np.rot90(v3)
+displayImage(v4)
+
+---------------------------------
+
+np.linspace([1,2,3],[5,6,8],4)
+
+
+---------------------------------
+
+def scale_Channel(arr,scale=2):
+    newarr=None
+    for i in range(arr.shape[0]-1):
+        int_arr=np.linspace(arr[i,:],arr[i+1,:],(scale+1))[:-1,:]
+        if newarr is None:
+            newarr=int_arr
+        else:
+            newarr=np.vstack((newarr,int_arr))
+    return newarr
+displayImage(l)
+z=scale_Channel(l)
+v=np.rot90(z)
+m=scale_Channel(v)
+displayImage(np.rot90(m,3))

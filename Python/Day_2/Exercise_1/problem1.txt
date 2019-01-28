@@ -1,0 +1,11 @@
+'''
+Write down why each of the entries in the left column will raise an syntax error if it is used as an identifier
+'''
+
+Person Record - In python an identifier cannot have whitespace in it
+
+DEFAULT-HEIGHT - Identifier cannot contain '-' symbol in it
+
+class - class is reserved keyword in python therefore cannot be used as an identifeier
+
+2totalweight - Identifier cannot start with a number in python 

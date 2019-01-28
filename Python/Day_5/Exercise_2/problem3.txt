@@ -1,0 +1,6 @@
+3. For what values of x will this program print "True"?
+
+if x > 1 or x <= 8:
+    print("True")
+
+--> 2, 3, 4, 5, 6, 7, 8

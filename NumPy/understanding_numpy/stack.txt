@@ -1,0 +1,82 @@
+-----------------------------------------
+importing numpy
+
+# This is all you might need
+import numpy as np
+
+# Just for something fun
+import cv2
+from IPython.display import Image, display
+
+--------------------------------------------
+Helpers
+
+### Helpers :)
+
+def show(img, fmt='.jpeg'):
+    display(Image(cv2.imencode(fmt, img)[1].tostring()))
+
+------------------------------------------------
+Create array
+
+a = np.array([1, 2, 3])
+print(a)
+type(a)
+---------------------------------------------
+Identity matrix
+
+identity_matrix = np.eye(2, dtype=int)
+print(identity_matrix)
+
+--------------------------------------------
+array range and reshaping array
+
+a = np.arange(36).reshape(4,3,3)
+print(a)
+
+---------------------------------------------
+Generate equidistant points
+
+np.linspace(0, 255, num=100)
+
+---------------------------------------------
+sum of axes of matrix
+
+matrix_sum = a.sum()
+rowadd = np.sum(a, axis = 0)
+coladd = np.sum(a, axis = 1)
+zadd = np.sum(a, axis = 2)
+
+print("x add = \n", rowadd)
+print("y add = \n", coladd)
+print("z add = \n", zadd)
+
+---------------------------------------------
+shape of array
+
+a.shape
+
+---------------------------------------------
+identity matrix
+
+identity_matrix = np.eye(2, dtype=int)
+print(identity_matrix)
+---------------------------------------------
+
+Stack it all up (rotate and stack matrix)
+
+a = np.zeros(50*50).reshape(50,50)
+a[:,-10:] = 255
+a[-10 :,:] = 255
+print(a)
+
+b = np.rot90(a)
+c = np.vstack((a, b))
+c = np.vstack((a, b))
+d = np.rot90(np.rot90(c))
+e = np.hstack((c,d))
+#show(a)
+#show(b)
+#show(c)
+#show(d)
+show(e)

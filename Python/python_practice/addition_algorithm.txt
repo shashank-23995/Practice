@@ -1,0 +1,10 @@
+
+Addition of two numbers
+
+step 1 - Start
+step 1 - Define variable with a value - number 1
+step 2 - Define another variable with a value - number 2
+step 3 - Perform addition
+step 4 - store result of addition
+step 5 - display result on the screen
+step 6 - Exit

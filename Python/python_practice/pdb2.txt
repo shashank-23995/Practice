@@ -1,0 +1,506 @@
+synerzip@ULTP-348:~/Desktop/Practice/Python$ cd Day_13
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ ls
+function.py
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ python3 function.py
+Hello World
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ python3 function.py
+> /home/synerzip/Desktop/Practice/Python/Day_13/function.py(4)<module>()
+-> my_function = print_a_message
+(Pdb) n
+--Return--
+> /home/synerzip/Desktop/Practice/Python/Day_13/function.py(4)<module>()->None
+-> my_function = print_a_message
+(Pdb) n
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ python3 function.py
+> /home/synerzip/Desktop/Practice/Python/Day_13/function.py(5)<module>()
+-> my_function = print_a_message
+(Pdb)
+Traceback (most recent call last):
+  File "function.py", line 5, in <module>
+    my_function = print_a_message
+  File "function.py", line 5, in <module>
+    my_function = print_a_message
+  File "/usr/lib/python3.5/bdb.py", line 48, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.5/bdb.py", line 67, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ pip install pep8
+Collecting pep8
+  Using cached https://files.pythonhosted.org/packages/42/3f/669429ce58de2c22d8d2c542752e137ec4b9885fff398d3eceb1a7f5acb4/pep8-1.7.1-py2.py3-none-any.whl
+Installing collected packages: pep8
+Could not install packages due to an EnvironmentError: [Errno 13] Permission denied: '/usr/local/lib/python2.7/dist-packages/pep8.py'
+Consider using the `--user` option or check the permissions.
+
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ pip3 install pep8
+Collecting pep8
+  Downloading https://files.pythonhosted.org/packages/42/3f/669429ce58de2c22d8d2c542752e137ec4b9885fff398d3eceb1a7f5acb4/pep8-1.7.1-py2.py3-none-any.whl (41kB)
+    100% |████████████████████████████████| 51kB 363kB/s
+Installing collected packages: pep8
+Successfully installed pep8-1.7.1
+You are using pip version 8.1.1, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ pep8 function.py
+/home/synerzip/.local/lib/python3.5/site-packages/pep8.py:2124: UserWarning:
+
+pep8 has been renamed to pycodestyle (GitHub issue #466)
+Use of the pep8 tool will be removed in a future release.
+Please install and use `pycodestyle` instead.
+
+$ pip install pycodestyle
+$ pycodestyle ...
+
+  '\n\n'
+function.py:4:1: E402 module level import not at top of file
+function.py:4:11: E702 multiple statements on one line (semicolon)
+function.py:5:30: W292 no newline at end of file
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ pep8 function.py
+/home/synerzip/.local/lib/python3.5/site-packages/pep8.py:2124: UserWarning:
+
+pep8 has been renamed to pycodestyle (GitHub issue #466)
+Use of the pep8 tool will be removed in a future release.
+Please install and use `pycodestyle` instead.
+
+$ pip install pycodestyle
+$ pycodestyle ...
+
+  '\n\n'
+function.py:4:1: E402 module level import not at top of file
+function.py:4:11: W291 trailing whitespace
+function.py:6:30: W292 no newline at end of file
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ pep8 function.py
+/home/synerzip/.local/lib/python3.5/site-packages/pep8.py:2124: UserWarning:
+
+pep8 has been renamed to pycodestyle (GitHub issue #466)
+Use of the pep8 tool will be removed in a future release.
+Please install and use `pycodestyle` instead.
+
+$ pip install pycodestyle
+$ pycodestyle ...
+
+  '\n\n'
+function.py:1:11: W291 trailing whitespace
+function.py:3:1: E302 expected 2 blank lines, found 1
+function.py:7:30: W292 no newline at end of file
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ pep8 function.py
+/home/synerzip/.local/lib/python3.5/site-packages/pep8.py:2124: UserWarning:
+
+pep8 has been renamed to pycodestyle (GitHub issue #466)
+Use of the pep8 tool will be removed in a future release.
+Please install and use `pycodestyle` instead.
+
+$ pip install pycodestyle
+$ pycodestyle ...
+
+  '\n\n'
+function.py:1:11: W291 trailing whitespace
+function.py:2:1: E302 expected 2 blank lines, found 0
+function.py:5:30: W292 no newline at end of file
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ pep8 function.py
+/home/synerzip/.local/lib/python3.5/site-packages/pep8.py:2124: UserWarning:
+
+pep8 has been renamed to pycodestyle (GitHub issue #466)
+Use of the pep8 tool will be removed in a future release.
+Please install and use `pycodestyle` instead.
+
+$ pip install pycodestyle
+$ pycodestyle ...
+
+  '\n\n'
+function.py:1:11: W291 trailing whitespace
+function.py:2:1: E302 expected 2 blank lines, found 0
+function.py:4:1: W293 blank line contains whitespace
+function.py:6:30: W292 no newline at end of file
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ pep8 function.py
+/home/synerzip/.local/lib/python3.5/site-packages/pep8.py:2124: UserWarning:
+
+pep8 has been renamed to pycodestyle (GitHub issue #466)
+Use of the pep8 tool will be removed in a future release.
+Please install and use `pycodestyle` instead.
+
+$ pip install pycodestyle
+$ pycodestyle ...
+
+  '\n\n'
+function.py:1:11: W291 trailing whitespace
+function.py:8:30: W292 no newline at end of file
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ pep8 function.py
+/home/synerzip/.local/lib/python3.5/site-packages/pep8.py:2124: UserWarning:
+
+pep8 has been renamed to pycodestyle (GitHub issue #466)
+Use of the pep8 tool will be removed in a future release.
+Please install and use `pycodestyle` instead.
+
+$ pip install pycodestyle
+$ pycodestyle ...
+
+  '\n\n'
+function.py:1:11: W291 trailing whitespace
+function.py:7:30: W292 no newline at end of file
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ pep8 function.py
+/home/synerzip/.local/lib/python3.5/site-packages/pep8.py:2124: UserWarning:
+
+pep8 has been renamed to pycodestyle (GitHub issue #466)
+Use of the pep8 tool will be removed in a future release.
+Please install and use `pycodestyle` instead.
+
+$ pip install pycodestyle
+$ pycodestyle ...
+
+  '\n\n'
+function.py:1:11: W291 trailing whitespace
+function.py:3:1: E302 expected 2 blank lines, found 1
+function.py:6:30: W292 no newline at end of file
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ pep8 function.py
+/home/synerzip/.local/lib/python3.5/site-packages/pep8.py:2124: UserWarning:
+
+pep8 has been renamed to pycodestyle (GitHub issue #466)
+Use of the pep8 tool will be removed in a future release.
+Please install and use `pycodestyle` instead.
+
+$ pip install pycodestyle
+$ pycodestyle ...
+
+  '\n\n'
+function.py:7:30: W292 no newline at end of file
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ pep8 function.py
+/home/synerzip/.local/lib/python3.5/site-packages/pep8.py:2124: UserWarning:
+
+pep8 has been renamed to pycodestyle (GitHub issue #466)
+Use of the pep8 tool will be removed in a future release.
+Please install and use `pycodestyle` instead.
+
+$ pip install pycodestyle
+$ pycodestyle ...
+
+  '\n\n'
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ python3 function.py
+> /home/synerzip/Desktop/Practice/Python/Day_13/function.py(7)<module>()
+-> my_function = print_a_message
+(Pdb) print_a_message
+<function print_a_message at 0x7f869f7f82f0>
+(Pdb) n
+--Return--
+> /home/synerzip/Desktop/Practice/Python/Day_13/function.py(7)<module>()->None
+-> my_function = print_a_message
+(Pdb) n
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ python3 function.py
+> /home/synerzip/Desktop/Practice/Python/Day_13/function.py(7)<module>()
+-> my_function = print_a_message
+(Pdb) print_a_message
+<function print_a_message at 0x7f9e2f5812f0>
+(Pdb) my_function
+*** NameError: name 'my_function' is not defined
+(Pdb) n
+--Return--
+> /home/synerzip/Desktop/Practice/Python/Day_13/function.py(7)<module>()->None
+-> my_function = print_a_message
+(Pdb)
+Traceback (most recent call last):
+  File "function.py", line 7, in <module>
+    my_function = print_a_message
+  File "/usr/lib/python3.5/bdb.py", line 52, in trace_dispatch
+    return self.dispatch_return(frame, arg)
+  File "/usr/lib/python3.5/bdb.py", line 96, in dispatch_return
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ python3 function.py
+> /home/synerzip/Desktop/Practice/Python/Day_13/function.py(7)<module>()
+-> my_function = print_a_message
+(Pdb) print_a_message
+<function print_a_message at 0x7ff595cbb2f0>
+(Pdb) n
+> /home/synerzip/Desktop/Practice/Python/Day_13/function.py(8)<module>()
+-> my_function()
+(Pdb) my_function
+<function print_a_message at 0x7ff595cbb2f0>
+(Pdb) n
+Hello World
+--Return--
+> /home/synerzip/Desktop/Practice/Python/Day_13/function.py(8)<module>()->None
+-> my_function()
+(Pdb) n
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ python3 function.py
+> /home/synerzip/Desktop/Practice/Python/Day_13/function.py(7)<module>()
+-> my_function = print_a_message
+(Pdb) my_function
+*** NameError: name 'my_function' is not defined
+(Pdb)
+Traceback (most recent call last):
+  File "function.py", line 7, in <module>
+    my_function = print_a_message
+  File "function.py", line 7, in <module>
+    my_function = print_a_message
+  File "/usr/lib/python3.5/bdb.py", line 48, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.5/bdb.py", line 67, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ python3 function.py
+> /home/synerzip/Desktop/Practice/Python/Day_13/function.py(7)<module>()
+-> my_function = print_a_message
+(Pdb) l
+  2
+  3
+  4     def print_a_message():
+  5         print("Hello World")
+  6     pdb.set_trace()
+  7  -> my_function = print_a_message
+  8     my_function()
+[EOF]
+(Pdb) my_function
+*** NameError: name 'my_function' is not defined
+(Pdb) n
+> /home/synerzip/Desktop/Practice/Python/Day_13/function.py(8)<module>()
+-> my_function()
+(Pdb) l
+  3
+  4     def print_a_message():
+  5         print("Hello World")
+  6     pdb.set_trace()
+  7     my_function = print_a_message
+  8  -> my_function()
+[EOF]
+(Pdb) my_function
+<function print_a_message at 0x7fce1d0772f0>
+(Pdb) my_function()
+Hello World
+(Pdb) s
+--Call--
+> /home/synerzip/Desktop/Practice/Python/Day_13/function.py(4)print_a_message()
+-> def print_a_message():
+(Pdb) c
+Hello World
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ pep8 function_parameter.py
+/home/synerzip/.local/lib/python3.5/site-packages/pep8.py:2124: UserWarning:
+
+pep8 has been renamed to pycodestyle (GitHub issue #466)
+Use of the pep8 tool will be removed in a future release.
+Please install and use `pycodestyle` instead.
+
+$ pip install pycodestyle
+$ pycodestyle ...
+
+  '\n\n'
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ pep8 function_parameter.py
+/home/synerzip/.local/lib/python3.5/site-packages/pep8.py:2124: UserWarning:
+
+pep8 has been renamed to pycodestyle (GitHub issue #466)
+Use of the pep8 tool will be removed in a future release.
+Please install and use `pycodestyle` instead.
+
+$ pip install pycodestyle
+$ pycodestyle ...
+
+  '\n\n'
+function_parameter.py:6:1: W293 blank line contains whitespace
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ pep8 function_parameter.py
+/home/synerzip/.local/lib/python3.5/site-packages/pep8.py:2124: UserWarning:
+
+pep8 has been renamed to pycodestyle (GitHub issue #466)
+Use of the pep8 tool will be removed in a future release.
+Please install and use `pycodestyle` instead.
+
+$ pip install pycodestyle
+$ pycodestyle ...
+
+  '\n\n'
+function_parameter.py:6:1: W293 blank line contains whitespace
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ pep8 function_parameter.py
+/home/synerzip/.local/lib/python3.5/site-packages/pep8.py:2124: UserWarning:
+
+pep8 has been renamed to pycodestyle (GitHub issue #466)
+Use of the pep8 tool will be removed in a future release.
+Please install and use `pycodestyle` instead.
+
+$ pip install pycodestyle
+$ pycodestyle ...
+
+  '\n\n'
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ python3 function_parameter.py
+> /home/synerzip/Desktop/Practice/Python/Day_13/function_parameter.py(8)<module>()
+-> print_a_message("Hello World")
+(Pdb) s
+--Call--
+> /home/synerzip/Desktop/Practice/Python/Day_13/function_parameter.py(4)print_a_message()
+-> def print_a_message(message):
+(Pdb) a
+message = 'Hello World'
+(Pdb) l
+  1     import pdb
+  2
+  3
+  4  -> def print_a_message(message):
+  5         print(message)
+  6
+  7     pdb.set_trace()
+  8     print_a_message("Hello World")
+  9     print_a_message("Hi, I am  Joe")
+[EOF]
+(Pdb) n
+> /home/synerzip/Desktop/Practice/Python/Day_13/function_parameter.py(5)print_a_message()
+-> print(message)
+(Pdb) n
+Hello World
+--Return--
+> /home/synerzip/Desktop/Practice/Python/Day_13/function_parameter.py(5)print_a_message()->None
+-> print(message)
+(Pdb) n
+> /home/synerzip/Desktop/Practice/Python/Day_13/function_parameter.py(9)<module>()
+-> print_a_message("Hi, I am  Joe")
+(Pdb) n
+Hi, I am  Joe
+--Return--
+> /home/synerzip/Desktop/Practice/Python/Day_13/function_parameter.py(9)<module>()->None
+-> print_a_message("Hi, I am  Joe")
+(Pdb) n
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ pep8 function_parameter.py
+/home/synerzip/.local/lib/python3.5/site-packages/pep8.py:2124: UserWarning:
+
+pep8 has been renamed to pycodestyle (GitHub issue #466)
+Use of the pep8 tool will be removed in a future release.
+Please install and use `pycodestyle` instead.
+
+$ pip install pycodestyle
+$ pycodestyle ...
+
+  '\n\n'
+function_parameter.py:10:1: E302 expected 2 blank lines, found 1
+function_parameter.py:11:17: W292 no newline at end of file
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ pep8 function_parameter.py
+/home/synerzip/.local/lib/python3.5/site-packages/pep8.py:2124: UserWarning:
+
+pep8 has been renamed to pycodestyle (GitHub issue #466)
+Use of the pep8 tool will be removed in a future release.
+Please install and use `pycodestyle` instead.
+
+$ pip install pycodestyle
+$ pycodestyle ...
+
+  '\n\n'
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ pep8 function_parameter.py
+/home/synerzip/.local/lib/python3.5/site-packages/pep8.py:2124: UserWarning:
+
+pep8 has been renamed to pycodestyle (GitHub issue #466)
+Use of the pep8 tool will be removed in a future release.
+Please install and use `pycodestyle` instead.
+
+$ pip install pycodestyle
+$ pycodestyle ...
+
+  '\n\n'
+function_parameter.py:15:16: E261 at least two spaces before inline comment
+function_parameter.py:15:17: E262 inline comment should start with '# '
+function_parameter.py:16:1: W391 blank line at end of file
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ pep8 function_parameter.py
+/home/synerzip/.local/lib/python3.5/site-packages/pep8.py:2124: UserWarning:
+
+pep8 has been renamed to pycodestyle (GitHub issue #466)
+Use of the pep8 tool will be removed in a future release.
+Please install and use `pycodestyle` instead.
+
+$ pip install pycodestyle
+$ pycodestyle ...
+
+  '\n\n'
+function_parameter.py:15:16: E261 at least two spaces before inline comment
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ pep8 function_parameter.py
+/home/synerzip/.local/lib/python3.5/site-packages/pep8.py:2124: UserWarning:
+
+pep8 has been renamed to pycodestyle (GitHub issue #466)
+Use of the pep8 tool will be removed in a future release.
+Please install and use `pycodestyle` instead.
+
+$ pip install pycodestyle
+$ pycodestyle ...
+
+  '\n\n'
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ python3 function_parameter.py
+Hello World
+Hi, I am  Joe
+> /home/synerzip/Desktop/Practice/Python/Day_13/function_parameter.py(15)<module>()
+-> print_sum(2, 3)  # this is correct
+(Pdb)
+Traceback (most recent call last):
+  File "function_parameter.py", line 15, in <module>
+    print_sum(2, 3)  # this is correct
+  File "function_parameter.py", line 15, in <module>
+    print_sum(2, 3)  # this is correct
+  File "/usr/lib/python3.5/bdb.py", line 48, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.5/bdb.py", line 67, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ python3 function_parameter.py
+Hello World
+Hi, I am  Joe
+> /home/synerzip/Desktop/Practice/Python/Day_13/function_parameter.py(15)<module>()
+-> print_sum()
+(Pdb)
+Traceback (most recent call last):
+  File "function_parameter.py", line 15, in <module>
+    print_sum()
+  File "function_parameter.py", line 15, in <module>
+    print_sum()
+  File "/usr/lib/python3.5/bdb.py", line 48, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.5/bdb.py", line 67, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ pep8 function_parameter.py
+/home/synerzip/.local/lib/python3.5/site-packages/pep8.py:2124: UserWarning:
+
+pep8 has been renamed to pycodestyle (GitHub issue #466)
+Use of the pep8 tool will be removed in a future release.
+Please install and use `pycodestyle` instead.
+
+$ pip install pycodestyle
+$ pycodestyle ...
+
+  '\n\n'
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ python3 function_parameter.py
+Hello World
+Hi, I am  Joe
+> /home/synerzip/Desktop/Practice/Python/Day_13/function_parameter.py(15)<module>()
+-> print_sum()  # this won't work
+(Pdb) n
+TypeError: print_sum() missing 2 required positional arguments: 'a' and 'b'
+> /home/synerzip/Desktop/Practice/Python/Day_13/function_parameter.py(15)<module>()
+-> print_sum()  # this won't work
+(Pdb) n
+--Return--
+> /home/synerzip/Desktop/Practice/Python/Day_13/function_parameter.py(15)<module>()->None
+-> print_sum()  # this won't work
+(Pdb)
+Traceback (most recent call last):
+  File "function_parameter.py", line 15, in <module>
+    # print_sum()  # this won't work
+  File "/usr/lib/python3.5/bdb.py", line 52, in trace_dispatch
+    return self.dispatch_return(frame, arg)
+  File "/usr/lib/python3.5/bdb.py", line 96, in dispatch_return
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ python3 function_parameter.py
+Hello World
+Hi, I am  Joe
+> /home/synerzip/Desktop/Practice/Python/Day_13/function_parameter.py(16)<module>()
+-> print_sum(2, 3)  # this is correct
+(Pdb) n
+5
+--Return--
+> /home/synerzip/Desktop/Practice/Python/Day_13/function_parameter.py(16)<module>()->None
+-> print_sum(2, 3)  # this is correct
+(Pdb) s
+synerzip@ULTP-348:~/Desktop/Practice/Python/Day_13$ python3 function_parameter.py
+Hello World
+Hi, I am  Joe
+> /home/synerzip/Desktop/Practice/Python/Day_13/function_parameter.py(16)<module>()
+-> print_sum(2, 3)  # this is correct
+(Pdb) s
+--Call--
+> /home/synerzip/Desktop/Practice/Python/Day_13/function_parameter.py(11)print_sum()
+-> def print_sum(a, b):
+(Pdb) a
+a = 2
+b = 3
+(Pdb) c

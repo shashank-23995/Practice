@@ -1,0 +1,27 @@
+clone repository from
+
+https://github.com/vmandke/Tutorials.git
+
+go in project directory
+
+follow commands
+
+1)
+sudo make installvirtualenv
+
+2)
+pip3 install virtualenv
+
+3)
+make deps
+
+4)
+Open Makefile in editor
+and change following portion
+(make pip3 at pip)
+
+installvirtualenv:
+	pip3 install virtualenv
+
+5)
+make start

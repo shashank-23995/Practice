@@ -1,0 +1,17 @@
+Identifer name guidelines
+
+descriptive
+ - vriable name should be describe content of variable
+ - function name indicate what the function does
+ - don't use abbreviations
+
+Identifer names - Naming conventions
+
+ - Names of classes should be in CamelCase
+ - Constant variable should be on CAPITAL_LETTERS_WITH_UNDERSCORE
+ - Constant variable should be on small_letter_with_underscore
+
+ 
+ - Python uses indentation only to delimit blocks
+ - We cannot define constant variable in python
+ In python None is special value which means "nothing"
