@@ -1,0 +1,70 @@
+create virtual environment python
+
+Creating a virtualenv
+python3 -m virtualenv env
+
+Activating a virtualenv
+source env/bin/activate
+
+Confirm you are in virtualenv
+which python
+
+Leaving the virtualenv¶
+deactivate
+
+
+intall pipenv //not related
+
+Install CLI
+
+sudo pip install --upgrade awscli
+
+Then configure CLI
+command - aws configure
+
+for help - aws lambda help
+
+create handler.py
+
+from __future__ import print_function
+
+print("Loading Function")
+
+def lambda_handler(event, context):
+	return "Hello World! Response By Lambda Function"
+
+Create zip file
+command -  zip -r helloworld_package.zip handler.py
+
+Create function using CLI
+
+lambda create-function --function-name HelloWorld_Shashank --description 'Hello world lambda function created AWS CLI' --runtime python3.6 --handler 'handler.lambda_handler' --role arn:aws:iam::445420586144:role/kiwano-dev-ZappaLambdaExecutionRole --zip-file fileb://helloworld_package.zip
+
+Then invoke function
+aws lambda invoke --function-name HelloWorld_Shashank hello.txt
+
+
+
+automate
+
+create directory
+First install pipenv
+pip install pipenv
+
+Activate virtual env (activate shell) - 
+pipenv shell
+
+Then install flask and zappa
+pipenv install flask
+pipenv install zappa
+
+Start zappa
+zappa init
+
+follow instructions on command line
+
+for first time
+zappa deploy dev
+
+for updating 
+zappa update dev

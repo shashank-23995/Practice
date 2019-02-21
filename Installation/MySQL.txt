@@ -1,0 +1,27 @@
+Install MySQL
+
+sudo apt-get update
+sudo apt-get install mysql-server
+
+-----------------------------------------------------------
+
+To log sql commands in log file
+
+mysql> tee /home/synerzip/Desktop/Practice/SQL/log.txt;
+
+-----------------------------------------------------------
+
+Import MySQl Database
+
+mysql -u [username] -p [database_name] < [file_path]
+
+example - 
+mysql -u root -p QuizDB < QuizDB.sql
+
+Export MySQL Database
+
+mysqldump -u [username] -p [Database_Name] > [file_name]
+
+example - 
+mysqldump -u root -p blog_db > blog_db.sql
+

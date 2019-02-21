@@ -1,0 +1,36 @@
+Install Express
+
+1) Create directory
+mkdir myapp
+
+2)move to directory
+cd myapp
+
+3)Change entry point to app.js
+entry point: (index.js) to "app.js"
+
+4)Install Express
+npm install express --save
+OR
+to install temporarily without adding dependencies
+npm install express --no-save
+
+5)run Express application
+node app.js
+
+-------------------------------------------------------------------
+
+Using app generator in express
+
+1)install app generator
+npm install express-generator -g
+
+2)set default view engine for the project
+
+express --view=[view engine] myapp
+
+Ex
+express --view=pug myapp
+
+3)Install dependencies
+npm install

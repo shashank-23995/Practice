@@ -1,0 +1,7 @@
+ - What test cases includes
+ - Test design patterns
+ - trace matrix
+ - Test design techniques
+	Equivlant partition
+	Decision table
+	Boundary value analysis

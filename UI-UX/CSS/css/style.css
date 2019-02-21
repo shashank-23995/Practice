@@ -1,0 +1,138 @@
+body{
+    background-color: white;
+}
+/* div{
+    border: 2px solid;
+} */
+.header{
+    background-color: beige;
+}
+
+.container{
+    margin: 0;
+}
+
+#cloud1{
+    margin-left: 70%;
+}
+
+#cloud2{
+    margin-right: 70%;
+}
+
+.header > .mountain{
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 400px;
+    width: 400px;
+}
+.header{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+
+.profile > h1{
+    text-align: center;
+    color: orange;
+}
+
+.profile > p{
+    width: 20rem;
+    margin: 20px auto;
+    /* background-color: #fed9ca; */
+}
+
+.logo{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 100px;
+}
+
+.skills{
+    width: 50%;
+    margin: 10px auto;
+    margin-bottom: 100px;
+}
+
+.skills > h1{
+    text-align: center;
+    color: orange;
+}
+
+.skill-name{
+    text-align: left;
+    color: orange;
+}
+.sk1 {
+    height: 200px;
+    width: 200px;
+    float: left;
+    margin-right: 30px;
+  }
+
+.sk2 {
+    height: 200px;
+    width: 200px;
+    float: right;
+    margin-left: 30px;
+}
+
+.block1, .block2 {
+    margin: 70px 0;
+}
+.contact{
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.contact-head {
+    margin-top: 100px;
+    color: orange;
+}
+
+.contact-button{
+    margin-top: 30px;
+    color: white;
+    background-color: orange;
+    border: 2px solid orange;
+    border-radius: 5px;
+}
+
+.footer{
+    text-align: center;
+    margin-top: 50px;
+    height: 220px;
+    width: 100%;
+    background-color: orange;
+}
+.social{
+    padding-top: 40px;
+}
+a{
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-decoration: none;
+    font: 30;
+    color: white;
+}
+
+.copyright{
+    padding: 50px;
+    color: white;
+}
+
+.license > p{
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+span{
+    margin-left: 5px;
+    color: white;
+}

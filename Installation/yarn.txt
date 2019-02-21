@@ -1,0 +1,13 @@
+yarn
+install
+sudo npm install -g yarnpkg
+
+uninstall
+sudo npm uninstall -g yarnpkg
+
+cmdtest
+install
+sudo apt install cmdtest
+
+uninstall
+sudo apt remove cmdtest

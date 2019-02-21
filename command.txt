@@ -104,7 +104,7 @@ mysqldump -u root -p blog_db > blog_db.sql
 
 To ignore "node_modules"files in git commit
 
-type foloowing command in terminal
+type following command in terminal
 
 	gedit .gitignore&
 

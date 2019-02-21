@@ -40,3 +40,27 @@ subscribe
 Date - 25-1-2019
 
 Get details about jupyter  
+
+
+Date 4-2-2019
+Containers
+Dockers
+microservices
+
+o/p-
+should be able to create images
+and port services at end of the day
+
+Date 7-2-2019
+
+serverless architecture
+AWS lambda	
+
+15-2-2019
+
+PWA
+UI thread
+web worker
+service worker
+grunt
+gulp

@@ -1,0 +1,12 @@
+static page layout
+liquid page layout
+adaptive page layout
+responsive page layout - combination of liquid and adaptive page layout
+---------------------------
+media queries -
+syntax	 
+@madia(size){}
+
+used to check- 
+height width of viewport, device
+check orientation

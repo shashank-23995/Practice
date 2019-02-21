@@ -1,0 +1,6 @@
+Error - problems in coding is known as errors
+defects - Errors discovered by tester is defects
+bug - bugs accepted by developer are bugs
+
+defect lifecycle
+bug reporting

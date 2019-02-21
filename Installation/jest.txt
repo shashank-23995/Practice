@@ -1,0 +1,16 @@
+
+Intall and Initialize Jest
+
+1) Create node directory
+npm init
+
+2) Install Jest	
+npm install --save-dev jest
+
+then open package.json and set test="jest" in it
+
+To run unit testcases
+npm test
+
+To download missing node_modules (packages mentioned in package.json but not installed in node directory)
+npm install

@@ -1,0 +1,38 @@
+Install MongoDB
+
+1) Import the public key used by the package management system.
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
+
+2) Create a list file for MongoDB.
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
+
+3) Reload local package database.
+sudo apt-get update
+
+4) Install the MongoDB packages.
+sudo apt-get install -y mongodb-org
+
+----------------------------------------------------------------
+
+MongoDB with nodejs
+
+
+remove deprecation warning while connecting to mongoDB
+
+mongoclient.connect(url,{useNewUrlParser:true},function(err,db)
+
+-----------------------------------------------------------------
+
+Import MongoDB Database
+
+mongoimport --db [Database_Name] --collection [collection_name] --file [file_name]
+
+example -
+mongoimport --db QuizExpressDB --collection Quiz --file Quiz.json
+
+Export MongoDB Database
+
+mongoexport  --db [Database_Name] --collection [collection_name] --out [file_name]
+
+example - 
+mongoexport  --db TTMMDB --collection group --out Group.json

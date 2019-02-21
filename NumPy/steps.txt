@@ -25,3 +25,9 @@ installvirtualenv:
 
 5)
 make start
+
+
+-----------------------------------------
+install specy or any other package in virtual environment
+
+.env/bin/python -m spacy download en

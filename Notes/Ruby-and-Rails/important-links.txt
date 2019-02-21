@@ -1,0 +1,42 @@
+https://gorails.com/setup/ubuntu/16.04
+
+https://guides.rubyonrails.org/getting_started.html
+
+https://www.railstutorial.org/book
+
+http://iwanttolearnruby.com/
+
+https://www.pluralsight.com/search?q=ruby
+
+https://ruby-doc.org/
+
+https://guides.rubyonrails.org
+
+http://railsgirls.com/
+http://guides.railsgirls.com
+
+Read Active Record Associations
+
+https://projecteuler.net/
+
+loops
+ - each - like foreach
+ - each with index
+ - collect
+ - select 
+ - reject
+ - iject
+ - upto
+ - downto
+
+constructor name is always initialize
+
+class method
+def self.method_name
+
+instance method
+def method_name
+
+modules
+include --> instance method
+extend --> class method

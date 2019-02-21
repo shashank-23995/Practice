@@ -1,0 +1,67 @@
+Links used in presentation:
+
+HTML Cheatsheet - https://www.december.com/html/spec/HTML5-Cheat-Sheet.pdf
+
+Box Model Interactive Demo - http://markusvogl.com/web1/interactive_box_model/css_box_demo.html
+
+Display Property - https://codepen.io/Kirti306/pen/xMGBxZ
+
+Position Property : https://codepen.io/Kirti306/pen/jdrNdm?editors=1100
+
+Wayback Machine - https://archive.org/web/
+
+Float - https://codepen.io/Kirti306/pen/ZwLXNQ?editors=1100
+
+Centering Elements - https://codepen.io/Kirti306/pen/BMQLYJ?editors=1100
+
+CSS Font Stack -  https://www.cssfontstack.com/
+
+Google fonts - https://fonts.google.com/
+
+Autoprefixer - https://autoprefixer.github.io/
+
+Color - https://codepen.io/Kirti306/pen/ZwyaqG
+
+Gradient - https://codepen.io/Kirti306/pen/xMRrPa?editors=1100
+
+Box shadow - https://www.cssmatic.com/box-shadow
+
+2D & 3D Transform - https://codepen.io/Kirti306/pen/PVbeWp?editors=1100
+
+Transition - https://codepen.io/Kirti306/pen/exRJJg
+
+Animation - https://codepen.io/team/css-tricks/pen/EjaJNd
+
+Which properties can be animated - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties
+
+Flexbox - https://codepen.io/justd/full/yydezN/
+
+Favicon - www.favicon.cc
+ 
+------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+
+References List
+
+Browser List - https://www.slimjet.com/en/lp/top-10-browsers.php
+
+Editors List - https://mythemeshop.com/blog/code-editors/
+
+Online Web Editors - https://www.awwwards.com/10-html-css-online-code-editors-for-web-developers.html
+
+MDN Web Docs - https://developer.mozilla.org/en-US/docs/Web/CSS
+
+w3schools - https://www.w3schools.com/css/
+
+Dev Docs - https://devdocs.io/
+
+W3C - https://www.w3.org/Style/CSS/
+
+Color Palettes - https://colorhunt.co/
+
+CodePen - https://codepen.io
+
+Flat Icons -  https://www.flaticon.com/
+
+Pesticides - https://chrome.google.com/webstore/detail/pesticide-for-chrome/bblbgcheenepgnnajgfpiicnbbdmmooh
+

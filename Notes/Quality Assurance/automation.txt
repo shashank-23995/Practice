@@ -1,0 +1,26 @@
+links
+
+configure eclipse with selenium webdriver - https://www.toolsqa.com/selenium-webdriver/configure-eclipse-with-selenium-webdriver/
+
+sideex - http://sideex.org/
+
+Selenium Jar - https://www.seleniumhq.org/download/
+
+chrome driver - https://sites.google.com/a/chromium.org/chromedriver/downloads
+
+firefox driver (geckodriver) - https://github.com/mozilla/geckodriver/releases
+
+Assignments - http://qatechhub.com/selenium-assignments/
+
+https://www.guru99.com/first-webdriver-script.html
+
+https://www.guru99.com/find-element-selenium.html
+
+http://thedemosite.co.uk/
+
+http://qatechhub.com
+
+https://www.toolsqa.com
+
+gherkin - https://docs.cucumber.io/gherkin/reference/
+

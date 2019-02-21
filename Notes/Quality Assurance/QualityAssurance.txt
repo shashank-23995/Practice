@@ -1,0 +1,103 @@
+------------------------------------------------------------------------------------------------------------------------------------------------
+Important Links
+
+http://www.qatutorial.com
+------------------------------------------------------------------------------------------------------------------------------------------------
+Functional Testing
+ - Functional testing is a type of testing which verifies that each function of the software application operates in conformance with the requirement specification.
+ - This testing mainly involves black box testing, and it is not concerned about the source code of the application.
+ - Every functionality of the system is tested by providing appropriate input, verifying the output and comparing the actual results with the expected results.
+ - It is based on customer's requirements.
+ - Helps to validate the behavior of the application.
+ - Carried out to validate software actions.
+
+
+Non-Functional Testing
+ - Non-functional testing is a type of testing to check non-functional aspects (performance, usability, reliability, etc.) of a software application.
+ - It is explicitly designed to test the readiness of a system as per nonfunctional parameters which are never addressed by functional testing.
+ - It focusses on customer's expectation.
+ - Helps to validate the performance of the application.
+ - It is done to validate the performance of the software.
+
+
+Testing Types
+1) Functional Testing
+
+ - Unit testing - 
+Testing of individual software components or groups of related components Testing conducted to evaluate whether systems or components pass data and control correctly to one another
+
+ - Smoke testing -
+In software industry, smoke testing is a wide and shallow approach whereby all areas of the application are tested, without getting into too deep. Smoke testing originated in the hardware testing practice of turning on a new piece of hardware for the first time and considering it a success if it does not catch fire and smoke. When a build is received, a smoke test is run to ascertain if the build is stable and it can be considered for further testing. Smoke testing is done by Developer or White box engineers.
+
+ - User Acceptance - 
+Formal testing conducted to enable a user, customer or other authorized entity to determine whether to accept a system or component.
+
+ - Integration Testing - 
+Integration testing is the activity of software testing in which individual software modules are combined and tested as a group. Testing in which software components or hardware components or both are combined and tested to evaluate the interaction between them.
+
+ - Regression testing - 
+When a defect is found in verification and it is fixed we need to verify that 1) the fix was done correctly 2) to verify that the fix doesn’t break anything else. This is called regression testing. Regression testing needs to be performed to ensure that the reported errors are indeed fixed. Testing also needs to be performed to ensure that the fixes made to the application do not cause new errors to occur. Selective testing of a system or component to verify that modifications have not caused unintended effects. A system that fails after the modification of a component is said to regress. Regression Testing is where the integra
+
+ - Localization - 
+ Localization is the process of adapting internationalized software for a specific region or language by adding locale-specific components and translating text. Localization is the process of adapting a globalized application to a particular culture/locale. Localizing an application requires a basic understanding of the character sets typically used in modern software development and an understanding of the issues associated with them. Localization includes the translation of the application user interface and adapting graphics for a specific culture/locale. The localization process can also include translating any help content associated with the application.
+
+ - Globalization
+ - Interoperability
+
+2) Non-Functional Testing
+
+ - Performance Testing
+Performance test is testing the product/application with respect to various time critical functionalities. It is related to benchmarking of these functionalities with respect to time. This is performed under a considerable production sized setup. Performance Tests are tests that determine end to end timing (benchmarking) of various time critical business processes and transactions, while the system is under low load, but with a production sized database. This sets 'best possible' performance expectation under a given configuration of infrastructure. It can also serve to validate and verify other quality attributes of the system, such as scalability(measurable or quantifiable), reliability and resource usage. Under performance testing we define the essential system level performance requirements that will ensure the robustness of the system. The essential system level performance requirements are defined in terms of key behaviors of the system and the stress conditions under which the system must continue to exhibit those key behaviors." Some examples of the Performance parameters (in a Patient monitoring system - Healthcare product) are, 1. Real-time parameter numeric values match the physiological inputs 2. Physiological input changes cause parameter numeric and/or waveform modifications on the display within xx seconds. 3. The system shall transmit the numeric values frequently enough to attain an update rate of x seconds or shorter at a viewing device.
+
+ - Volume Testing
+ - Scalability
+ - Usability Testing
+
+ - Load Testing - 
+Load testing is the activity under which Anticipated Load is applied on the System, increasing the load slightly and checking when the performance starts to degrade.
+
+Load Tests are end to end performance tests under anticipated production load. The primary objective of this test is to determine the response times for various time critical transactions and business processes.
+
+ - Stress Testing
+Stress Tests determine the load under which a system fails, and how it fails.
+Testing conducted to evaluate a system or component at or beyond the limits of its specified requirements to determine the load under which it fails and how.
+A graceful degradation under load leading to non-catastrophic failure is the desired result. Often Stress Testing is performed using the same process as Performance Testing but employing a very high level of simulated load.
+
+ - Compliance Testing
+ - Portability Testing
+ - Disaster Recover Testing
+
+3) Other
+
+ - Retesting - 
+Retesting means executing the same test case after fixing the bug to ensure the bug fixing.
+
+ - Sanity Testing - 
+A sanity test is a narrow regression test that focuses on one or a few areas of functionality. Sanity testing is usually narrow and deep. Testing few functions/parameters and checking all their main features. In which one can perform testing on an overall application (all features) initially to check whether the application is proper in terms of availability and Usability. Sanity testing is done by Test engineer.
+
+ - Soak Testing - 
+Soak testing involves testing a system with a significant load extended over a significant period of time, to discover how the system behaves under sustained use. For example, in software testing, a system may behave exactly as expected when tested for 1 hour. However, when it is tested for 3 hours, problems such as memory leaks cause the system to fail or behave randomly.
+
+ - Exploratory Testing - 
+Exploratory testing is a method of manual testing that is described as simultaneous learning, design and execution.
+
+ - Exhaustive Testing - 
+Testing which covers all combination's of input values and preconditions for an element of the software under test.
+
+ - Compatibility Testing - 
+Compatibility testing is done to check that the system/application is compatible with the working environment. For example if it is a web based application then the browser compatibility is tested. If it is a installable application/product then the Operating system compatibility is tested. Compatibility testing verifies that your product functions correctly on a wide variety of hardware, software, and network configurations. Tests are run on a matrix of platform hardware configurations including High End, Core Market, and Low End.
+
+ - Alpha Testing - 
+Testing performed by actual customers at the developer’s site.
+
+ - Beta Testing - 
+Testing performed by actual customers at their site (customers site).
+
+ - Internationalization - 
+Internationalization is the process of designing a software application so that it can be adapted to various languages and regions without engineering changes. Internationalization is the process of designing and coding a product so it can perform properly when it is modified for use in different languages and locales.
+
+ - Static Testing - 
+The intention to find defects/bugs without executing the software or the code is called static testing. Example: Review, Walkthrough, CIP(Code Inspection Procedure). Static testing is a form of software testing where the software isn't actually used. It is generally not detailed testing, but checks mainly for the sanity of the code, algorithm, or document. It is primarily syntax checking of the code and/or manually reviewing the code or document to find errors. This type of testing can be used by the developer who wrote the code, in isolation. Code reviews, inspections and walkthroughs are also used.
+
+ - Dynamic testing - 
+Dynamic testing is nothing but functional testing. It is used to test software by executing it.

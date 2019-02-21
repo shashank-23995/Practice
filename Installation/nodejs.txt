@@ -1,0 +1,11 @@
+Install node.js and npm
+
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+-----------------------------------------------------------
+
+Initialize node directory
+
+npm init
+(this will create node directory, i.e will create package.json)

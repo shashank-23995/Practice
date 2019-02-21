@@ -1,0 +1,50 @@
+Install Git
+
+sudo apt install git
+-----------------------------------------------------------
+
+Initialize Git Repository
+
+1)git init "folder-name/path"
+2)create repository on github
+	OR
+1)create repository on github
+2)git clone "respository-url"
+------------------------------------------------------------
+
+Git Operations
+
+To add single file file
+git add "filename"
+
+To add all files in current directory
+git add .
+
+commit changes/files
+git commit -m"message"
+
+To psuh changes
+git push
+
+To set default remote to repository
+git remote add origin "repository-url"
+
+To check if remote is set
+git remote -v
+
+To push changes to default remote
+git push origin
+
+----------------------------------------------------------------
+
+To ignore "node_modules"files in git commit
+
+type following command in terminal
+
+	gedit .gitignore&
+
+one file will open type following
+
+**/node_modules/**/*
+
+then check git status, node_modules folder should be excluded

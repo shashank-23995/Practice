@@ -1,0 +1,27 @@
+create rails application
+
+steps -->
+
+rails new application_name
+
+cd application_name
+
+rails g scaffold events title:string description:text event_date:date
+
+rails db:create
+
+rails db:migrate
+
+rails s
+----------------------------------------------------------------------------
+if there is LoadError for sqlite for command rails db:create
+
+add following line in gemfile
+gem 'sqlite3', '~> 1.3.6'
+
+and run following command
+bundle update
+
+
+
+
