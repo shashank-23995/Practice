@@ -4,7 +4,17 @@ const findFactors=(number)=>{
     if(number==1){
         return null;
     }
-    pf.push(number);
+    let fact=2;
+    if(number>1){
+        while(number>=fact){
+            if(number%fact==0){
+                pf.push(fact);
+                number=number/fact;
+            } else {
+                fact++;
+            }
+        }
+    }
     return pf;
 };
 
@@ -13,7 +23,6 @@ const getFactors=(...number)=>{
     for (let n of number) {
         nf.push(n);
     }
-    nf.push(number);
     return nf;
 }
 
